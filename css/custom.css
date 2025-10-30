@@ -1,14 +1,14 @@
 :root {
   /* Colours */
-  --color-bg: #cfceca; /* page background /*
+  --color-bg: #7b8a7a; /* page background /*
 
   /* Header */
-  --color-head-bg: #625e5c;
+  --color-head-bg: #d4cabe;
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
-  --font-logotype-size: 1rem;
+  --color-logotype-bg: #8b6b4a;
+  --color-text-logotype: #fff;
+  --font-logotype-size: 2rem;
 
   /* Global menu */
   --color-menu-bg: #5a5b5e;
@@ -23,12 +23,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
+  --color-headline-bg: #d4cabe;
   --color-headline-text-page: #42413d;
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: #000;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,7 +37,7 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
+  --color-card-bg: #a35c3c;
   --color-cta-card-bg: #d5d2d0;
   /* news-cards */
   --color-news-bg: #dbdad4;
@@ -46,11 +46,11 @@
   --color-cta-newscard-bg-inverted: #7b7d83;
 
   /* Fonts */
-  --font-family-sans: ui-sans-serif;
-  /* --font-weight-light: 300;
+  --font-family-sans: "Rubik", ui-sans-serif;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700; */
+  --font-weight-bold: 700;
 
   /* Text sizes */
   --logotype-size: 1rem;
