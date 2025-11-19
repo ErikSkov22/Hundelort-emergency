@@ -1,5 +1,5 @@
 // ==========================
-// 🔥 HOTSPOTS (Instruction-side)
+// HOTSPOTS (Instruction-side)
 // ==========================
 const hotspotLort = document.querySelector("#hotspotLort");
 if (hotspotLort) {
@@ -90,7 +90,7 @@ function clickSaal() {
 }
 
 // ==========================
-// 🧼 REGISTER-SIDE (Summary)
+// REGISTER-SIDE (Summary)
 // ==========================
 (() => {
   if (document.body?.id !== "register") return;
