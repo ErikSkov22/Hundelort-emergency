@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/burger.css" />
   <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/infographic.css">
   <link rel="icon" type="image/png" href="img/fav.png" />
   <title>Emergency Site</title>
 </head>
@@ -20,7 +21,7 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="img/emergencyLogoTekstV3.svg"></img> </a>
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Uheldet </a></li>
@@ -35,87 +36,127 @@
   </header>
   <section id="main-disclamer">
     <div id="main-disclamer-content">
-      <img src="warning" alt="ICON" />
       <div>
-        <h1>OVERSKRIFT</h1>
-        <p class="sub">Underrubrik</p>
+        <h1>Danmarks officielle hundelort-beredskab</h1>
+        <p class="sub">Rapporter uheld, få råd til redning - og hjælp andre med at holde fortovene rene.</p>
       </div>
+
     </div>
   </section>
   <main>
     <section id="daily">
       <article class="daily_card">
-        <img src="" alt="teaser_img" />
+        <img src="img/forside1.webp" alt="teaser_img" class="daily_img" />
         <div class="daily_text">
-          <h2>Teaser</h2>
+          <h2>Akut 3-trins guide til at redde dine sko</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            magnam ducimus ea, sed minima asperiores.
+            Her er din guide til hvad du skal gøre hvis du træder i en hundelort. Guiden består af trin 3 du kan
+            navigere rundt i ved at klikke rundt på skoen.
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
         </div>
       </article>
       <article class="daily_card">
-        <img src="" alt="teaser_img" />
+        <img src="img/forside3.webp" alt="teaser_img" class="daily_img" />
         <div class="daily_text">
-          <h2>Teaser</h2>
+          <h2>Indberet her hvis du har trådt i en hundelort</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            magnam ducimus ea, sed minima asperiores.
+            Hvis du træder i en hundelort kan du på denne side indberette hvorhenne det skete, hvordan det skete og hvor
+            slemt det var. det hjælpere borgere i fremtiden til at vide hvor man skal være opmærkso i fremtiden.
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <a href="register.html" class="cta_btn">Se mere</a>
         </div>
       </article>
     </section>
     <section id="breaking">
       <article class="news_card">
-        <h3>Nyhed</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+        <h3>Mand i chok efter hundelorts-uheld på Strøget</h3>
+
+        <img src="img/ChatGPT Image 12. nov. 2025, 16.26.19.png" alt="news_img" />
+        <div popover id="dialog1">
+          <h2>Mand i chok efter hundelorts-uheld på Strøget</h2>
+          <h4> En travl morgen tog en uventet drejning, da en mand trådte i en gigantisk hundelort midt på Strøget.
+            Vidner beskriver
+            scenen som “kaotisk, men glat.”</h4>
+          <p>København, tirsdag formiddag — en ellers almindelig gåtur på Strøget udviklede sig dramatisk, da 34-årige
+            Henrik B.
+            pludselig gled i, hvad øjenvidner beskriver som “en formidabel størrelse”.
+            Henrik fortæller: “Jeg hørte bare et splæt og så var alt for sent. Det føltes som at træde i en varm
+            croissant.”
+            Københavns Kommune har efter hændelsen udsendt en opfordring til hundeejere om at huske poserne. “Det her er
+            en ulykke,
+            der kunne have været undgået,” siger en talsmand fra renhold.</p>
+
+          <div><img src="img/ChatGPT Image 12. nov. 2025, 16.26.19.png" alt="breaking1"></div>
+          <button popovertarget="dialog1" id="close_btn" class="cta_btn">LUK</button>
+        </div>
+
+        <button popovertarget="dialog1" class="cta_btn">Læs mere</button>
+
       </article>
       <article class="news_card">
-        <h3>Nyhed</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+        <h3>Kvinde mistede sko i Parken — reddet af forbipasserende</h3>
+
+        <img src="img/ChatGPT Image 12. nov. 2025, 16.33.15.png" alt="news_img" />
+        <div popover id="dialog2">
+          <h2>Kvinde mistede sko i Parken — reddet af forbipasserende</h2>
+          <h4> En hyggelig gåtur i Fælledparken fik et dramatisk twist, da en kvinde sad fast — med skoen — i en fersk
+            hundelort.</h4>
+          <p>En gåtur søndag eftermiddag tog en uheldig drejning, da 27-årige Sofie J. trådte direkte i en nyafleveret
+            hundelort og
+            måtte efterlade sin sneaker i parken.
+            “Jeg forsøgte at trække den fri, men det var for sent — jeg måtte vælge mellem skoen eller værdigheden,”
+            udtaler Sofie.
+            En forbipasserende hjalp med en plastikpose-redningsaktion, og skoen blev senere genfundet — dog uden ære.
+            Københavns Politi minder om, at “det er ulovligt at forlade afføring på offentlig vej — både for dyr og
+            mennesker.”</p>
+
+          <div><img src="img/ChatGPT Image 12. nov. 2025, 16.33.15.png" alt="breaking2"></div>
+          <button popovertarget="dialog2" id="close_btn" class="cta_btn">LUK</button>
+        </div>
+
+        <button popovertarget="dialog2" class="cta_btn">Læs mere</button>
       </article>
       <article class="news_card">
-        <h3>Nyhed</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+        <h3>Lokalt heltepar fjernede 47 hundelorte fra fortovet</h3>
+
+        <img src="img/ChatGPT Image 12. nov. 2025, 16.30.32.png" alt="news_img" />
+        <div popover id="dialog3">
+          <h2>Lokalt heltepar fjernede 47 hundelorte fra fortovet</h2>
+          <h4>Et ægtepar fra Amager tog sagen i egen hånd efter “for mange glatte oplevelser” på deres vej.</h4>
+          <p>Efter gentagne uheld på vej til arbejdet besluttede ægteparret Birgitte og Jørgen fra Amager at handle. Med
+            gummihandsker, poser og en stærk vilje ryddede de hele fortovet for hundelorte på under en time.
+            “Vi var trætte af at leve i frygt,” siger Jørgen, mens han viser sin improviserede “lorteskraber” lavet af
+            en
+            gammel
+            isskraber og en brødpose.
+            Parret hyldes nu på sociale medier som “de sande helte af renhedens frontlinje.”</p>
+          <div><img src="img/ChatGPT Image 12. nov. 2025, 16.30.32.png" alt="breaking3"></div>
+          <button popovertarget="dialog3" id="close_btn" class="cta_btn">LUK</button>
+        </div>
+
+        <button popovertarget="dialog3" class="cta_btn">Læs mere</a>
       </article>
     </section>
   </main>
 
-  <footer>
-    <nav class="some">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
-    <nav class="another">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
-    <nav class="yetanother">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Forside</a>
+      <a href="instruction.html">Uheldet</a>
+      <a href="register.html">Indberet</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Kontakt</p>
+      <p>
+        <a href="mailto:erha1000@stud.ek.dk">erha1000@stud.ek.dk</a><br>
+        +45 27 85 26 74
+      </p>
+    </div>
   </footer>
   <script src="js/burger.js"></script>
+  <script src="js/dialog.js"></script>
   <!-- <script src="js/main.js"></script> -->
 </body>
 

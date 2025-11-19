@@ -42,7 +42,7 @@
 }
 
 .fadeIn {
-  animation: fadeIn 2s linear;
+  animation: fadeIn 1s linear;
 }
 @keyframes fadeIn {
   from {
@@ -51,4 +51,9 @@
   to {
     opacity: 1;
   }
+}
+
+.info-graphic,
+.info-graphic svg {
+  background: transparent;
 }
