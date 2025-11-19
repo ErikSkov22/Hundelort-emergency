@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/burger.css" />
   <link rel="stylesheet" href="css/cards.css" />
-  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/forms.css" />
   <link rel="icon" type="image/png" href="img/fav.png" />
   <title>Emergency Site</title>
 </head>
@@ -21,7 +21,7 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="img/emergencyLogoTekstV3.svg"></img> </a>
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Uheldet </a></li>
@@ -34,51 +34,135 @@
       </button>
     </nav>
   </header>
-
   <main>
-    <h1>INDBERET</h1>
+    <h1>HAR DU TRÅDT I EN HUNDELORT?</h1>
     <section id="form-section">
-      <article id="form-info">
-        <h2>Overskrift</h2>
-        <p>Tekst</p>
-      </article>
-      <form id="webform"></form>
+      <form id="webform">
+        <!--KORT -->
+        <div class="form-card">
+          <div class="form-titlebar">UHELD - INDBERETNING</div>
+          <div class="form-body">
+            <!-- Person & kontakt -->
+            <fieldset class="form-group">
+              <legend class="group-title">Person & kontakt</legend>
+
+              <div class="form-row form-row--three">
+                <div class="field">
+                  <label for="name">Navn</label>
+                  <input class="input" type="text" id="name" name="name" placeholder="Dit navn" />
+                </div>
+
+                <div class="field">
+                  <label for="email">E-mail</label>
+                  <input class="input" type="email" id="email" name="email" placeholder="username@gmail.com" />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Telefon</label>
+                  <input class="input" type="tel" id="phone" name="phone" placeholder="+45 12 34 56 78" />
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Hvor skete uheldet? -->
+            <fieldset>
+              <legend>Hvor skete uheldet?</legend>
+              <label><input type="radio" name="underlag" value="Fortov" checked> Fortov</label>
+              <label><input type="radio" name="underlag" value="Græs"> Græs</label>
+              <label><input type="radio" name="underlag" value="Park/Cykelsti"> Park/Cykelsti</label>
+              <label><input type="radio" name="underlag" value="Indendørs"> Indendørs</label>
+            </fieldset>
+
+
+            <fieldset>
+              <legend>Hvilken sko?</legend>
+              <select name="sko">
+                <option value="Sneaker (flad sål)">Sneaker (flad sål)</option>
+                <option value="Løbesko (rillede sål)">Løbesko (rillede sål)</option>
+                <option value="Støvle">Støvle</option>
+                <option value="Andet">Andet</option>
+              </select>
+            </fieldset>
+
+            <!-- Status på skoen -->
+            <fieldset>
+              <legend>Status på skoen</legend>
+              <label><input type="checkbox" name="status" value="Kun på sålen"> Kun på sålen</label>
+              <label><input type="checkbox" name="status" value="Mellem rillerne"> Mellem rillerne</label>
+              <label><input type="checkbox" name="status" value="Op ad siden"> Op ad siden</label>
+              <label><input type="checkbox" name="status" value="På snørebåndet"> På snørebåndet</label>
+              <label><input type="checkbox" name="status" value="Kraftig lugt"> Kraftig lugt</label>
+              <label><input type="checkbox" name="status" value="Spor på gulv/fortov"> Spor på gulv/fortov</label>
+            </fieldset>
+
+            <div class="field">
+              <label for="sym-desc">Beskriv hændelsen (kort)</label>
+              <textarea id="sym-desc" name="sym-desc" rows="4" placeholder="Skriv kort om forløbet…"></textarea>
+            </div>
+
+            <div class="range-wrap">
+              <label for="intensity">Omfang (1-5)</label>
+              <input type="range" id="intensity" name="intensity" min="1" max="5" value="1" />
+              <div class="range-scale">
+                <span>1</span><span>2</span><span>3</span>
+                <span>4</span><span>5</span>
+              </div>
+            </div>
+
+
+            <!-- Knapper -->
+            <div class="form-actions">
+              <button type="reset" class="btn btn--ghost">Fortryd</button>
+              <button type="submit" class="btn btn--primary">Indsend</button>
+            </div>
+          </div>
+        </div>
+      </form>
     </section>
+
+    <!--Summary -->
     <section id="form-summary">
-      <h2>Summary</h2>
-      <article>
-        <p class="placeholder">Opsummering</p>
-      </article>
+      <br />
+      <div class="sum-card">
+        <div class="sum-titlebar">SUMMARY</div>
+        <div class="sum-body">
+          <h3 class="sum-section">Person & kontakt</h3>
+          <div>Navn — <span id="sum-navn"></span></div>
+          <div>E-mail — <span id="sum-mail"></span></div>
+          <div>Telefon — <span id="sum-tlf"></span></div>
+
+          <h3 class="sum-section">Hændelse</h3>
+          <div>Underlag — <span id="sum-underlag"></span></div>
+          <div>Sko — <span id="sum-sko"></span></div>
+          <div>Status — <span id="sum-status"></span></div>
+
+          <h4>Beskrivelse:</h4>
+          <div><span id="sum-beskrivelse">–</span></div>
+
+          <h4>Omfang:</h4>
+          <div><span id="sum-omfang">1/5</span></div>
+
+
+        </div>
     </section>
   </main>
-  <footer>
-    <nav class="some">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
-    <nav class="another">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
-    <nav class="yetanother">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Forside</a>
+      <a href="instruction.html">Uheldet</a>
+      <a href="register.html">Indberet</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Kontakt</p>
+      <p>
+        <a href="mailto:erha1000@stud.ek.dk">erha1000@stud.ek.dk</a><br>
+        +45 27 85 26 74
+      </p>
+    </div>
   </footer>
-  <script src="js/burger.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/burger.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>

@@ -91,3 +91,49 @@
   content: "\2192";
   margin-left: 1rem;
 }
+
+::backdrop {
+  backdrop-filter: blur(5px);
+}
+
+/*nr1*/
+[popover] {
+  padding: 1rem;
+
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+
+  background-color: #d4cabe;
+}
+
+#close_btn {
+  background-color: #7b8b7d; /* vælg en farve, der passer til dit tema */
+  color: white; /* tekstfarve */
+  border: none; /* fjerner standard-kanten */
+  padding: 0.5rem 1rem; /* giver lidt luft omkring teksten */
+  border-radius: 8px; /* bløde hjørner */
+  font-size: 1rem; /* lidt større tekst */
+  cursor: pointer; /* viser klik-hånd */
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem; /* lidt luft over knappen */
+}
+
+/* Hover-effekt */
+#close_btn:hover {
+  background-color: #5f6f61; /* lidt mørkere ved hover */
+  transform: scale(1.05); /* lille “pop”-effekt */
+}
+
+/*nr2*/
+[popover] {
+  padding: 1rem;
+
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+
+  background-color: #d4cabe;
+}
+
+/*nr3*/
